@@ -1,0 +1,33 @@
+{
+  "name": "vishnu-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "postinstall": "node scripts/copy-fonts.mjs",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "hero": "python3 scripts/build-hero-assets.py --video raw/intro.mp4 --photo raw/photo.jpg --name \"Vishnu A S\""
+  },
+  "dependencies": {
+    "lenis": "^1.3.4",
+    "next": "^15.5.4",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.1",
+    "@fontsource-variable/inter-tight": "^5.2.6",
+    "@fontsource-variable/jetbrains-mono": "^5.2.6",
+    "@fontsource/instrument-serif": "^5.2.6",
+    "@tailwindcss/postcss": "^4.1.13",
+    "@types/node": "^22",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "^15.5.4",
+    "tailwindcss": "^4.1.13",
+    "typescript": "^5"
+  }
+}
